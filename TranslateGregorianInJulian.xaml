@@ -1,0 +1,16 @@
+<Window x:Class="WpfApp12.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp12"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" AllowsTransparency="True" WindowStyle="None" Background="Gray" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Button x:Name="CloseButton" Content="Закрыть" HorizontalAlignment="Left" Margin="710,10,0,0" VerticalAlignment="Top" Height="44" Width="80" FontSize="20" Click="CloseButton_Click"/>
+        <DatePicker Name="DataPicker" HorizontalAlignment="Center" Margin="0,150,0,0" VerticalAlignment="Top"/>
+        <Label Content="Выберите дату" HorizontalAlignment="Center" Margin="0,108,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Button Content="Найти" HorizontalAlignment="Center" Margin="0,206,0,0" VerticalAlignment="Top" Height="29" Width="80" Click="Button_Click"/>
+        <TextBox x:Name="result" HorizontalAlignment="Center" Margin="0,258,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="LightGray" FontSize="18" IsEnabled="False"/>
+    </Grid>
+</Window>
